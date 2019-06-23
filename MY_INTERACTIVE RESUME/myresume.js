@@ -412,31 +412,31 @@ function create(){
 		}
 	}
 
-	game.add.sprite(10000,h-330,'frog').scale.setTo(0.8,0.8);
-	game.add.sprite(10300,h-360,'frog').scale.setTo(0.9,0.9);
+	// game.add.sprite(10000,h-330,'frog').scale.setTo(0.8,0.8);
+	// game.add.sprite(10300,h-360,'frog').scale.setTo(0.9,0.9);
 	game.add.sprite(10600,h-385,'frog');
 	game.add.sprite(10900,h-450,'frog').scale.setTo(1.2,1.2);
 	game.add.sprite(11300,h-485,'frog').scale.setTo(1.3,1.3);
 
 	//Add logos
-	game.add.sprite(10010,h-210,'campk12Logo').scale.setTo(0.75,0.75);
-	game.add.sprite(10310,h-230,'instaLogo');
-	game.add.sprite(10620,h-235,'hackerearthLogo').scale.setTo(0.48,0.48);
-	game.add.sprite(10970,h-280,'sandiskLogo');
+	// game.add.sprite(10010,h-210,'campk12Logo').scale.setTo(0.75,0.75);
+	// game.add.sprite(10310,h-230,'instaLogo');
+	game.add.sprite(10615,h-235,'hackerearthLogo').scale.setTo(0.48,0.48);
+	// game.add.sprite(10970,h-280,'sandiskLogo');
 	game.add.sprite(11320,h-300,'cbLogo').scale.setTo(0.6,0.6);
 
 	//Add company texts.
 	var style_ex = {font:"16px Arial",fill:orange,align:"center"};
 	var style_exS = {font:"12px Arial",fill:orange,align:"center"};
-	game.add.text(10080,h-210,"Camp K-12, Delhi \n Sept-Oct 2013 \n Design Instructor",style_exS);
-	game.add.text(10390,h-220,"InstaLabs, Gurgaon \n June-July 2014 \n Android Developer",style_exS);
-	game.add.text(10700,h-230,"HackerEarth\n March-April 2015 \n Problem Setter",style_ex); 
-	game.add.text(11000,h-250,"Bangalore \n June-July 2015 \n Firmware Developer\n Intern",style_ex);
-	game.add.text(11420,h-290,"Coding Blocks,Delhi \n Aug'15-Nov'15 \n C++ Course Instructor",style_ex);
+	// game.add.text(10080,h-210,"Camp K-12, Delhi \n Sept-Oct 2013 \n Design Instructor",style_exS);
+	// game.add.text(10390,h-220,"InstaLabs, Gurgaon \n June-July 2014 \n Android Developer",style_exS);
+	game.add.text(10685,h-230,"Silicon Microsystems\n Jan-Feb 2018 \n Hardware Intership",style_ex); 
+	game.add.text(11000,h-280,"SABBY STUDY CENTRE \n Oct-Nov 2018 \n Web Developer\n Internship",style_ex);
+	game.add.text(11420,h-290,"Coding Blocks,Delhi \n July-Sep 2018 \n C++ Course \n Teaching Assistant",style_ex);
     
-	var pd = game.add.sprite(10875,h-220,'sandiskPd');
-	pd.scale.setTo(1.2,1.2);
-	pd.angle = -30;
+	var pd = game.add.sprite(10890,h-280,'sandiskPd');
+	pd.scale.setTo(1,1);
+	pd.angle = 0;
 
 	//Add projects
 	game.add.sprite(12200,h-370,'games');
@@ -446,8 +446,8 @@ function create(){
 	game.add.text(12750,h-380,"Developed a gaming portal \n with frontend & backend \n to host and play games",style_white);
 
 
-	game.add.sprite(13400,h-210,'harddrive').scale.setTo(0.6,0.6);
-	game.add.sprite(13400,h-310,'bits');
+	game.add.sprite(13400,h-270,'harddrive').scale.setTo(0.6,0.6);
+	// game.add.sprite(13400,h-310,'bits');
 	game.add.text(13300,h-430,"Developed meta-data tracking\nstructures for large storage devices \n using Boost C++ and \n Boost Python Libraries.",style_white);
 
 	var pd = game.add.sprite(14050-100,h-160,'sandiskPd');
