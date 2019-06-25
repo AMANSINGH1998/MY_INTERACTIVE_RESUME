@@ -55,7 +55,10 @@ function preload(){
 	text.anchor.setTo(0.5,0.5);
 
 	game.load.image('restaurant','assets/restaurant.png');
-	game.load.image('taanz','assets/taanz.png');
+	game.load.image('moksha','assets/moksha.png');
+	game.load.image('waiter','assets/waiter.png');
+	game.load.image('hackeam','assets/hackeam.png');
+	game.load.image('tannz','assets/tannz.png');
 	game.load.image('volunteer','assets/volunteer.png');
 	game.load.image('superhero','assets/superhero.png');
 	game.load.image('book_ex','assets/book_ex.png');
@@ -309,11 +312,12 @@ function create(){
 	game.add.sprite(base6+200,h-250,'treeS').scale.setTo(0.7,0.7);
 	game.add.sprite(base6+380,h-300,'treeS').scale.setTo(0.8,0.8);
 
-
-	var style = { font: "16px monospace", fill: "#fff", align: "center" };
-	game.add.text(2920,h-250,"Class 10th\n 3rd Rank \n  Country Level \n Quiz Competetion", style);
-	game.add.text(3330,h-280,"Class 12th \n 95.2 % marks \n CBSE Board ", style);
-	game.add.text(3700,h-320,"JEE Mains \n All India Rank 489 \n 13th in Punjab \n\n 1st in DTU \n(University Rank Opener)", style);
+	// "Class 10th\n 3rd Rank \n  Country Level \n Quiz Competetion"
+	// "Class 12th \n 95.2 % marks \n CBSE Board "
+	var style = { font: "17px monospace", fill: "#fff", align: "center" };
+	game.add.text(2900,h-250,"Class 8th \n NTSE\n 1st Stage qualified ", style);
+	game.add.text(3305,h-280,"Class 10th \n3rd Rank Country Level \n Quiz Competetion", style);
+	game.add.text(3680,h-300,"JEE Mains \n All India NCL Rank 2700 \n\ 1st in Pinnacle Batch ", style);
 	//Add Ground and Grass
 	var ground = game.add.tileSprite(0,h-100,platformLength*2,2000,'ground');
 	ground.scale.setTo(0.5,0.5);
@@ -449,11 +453,11 @@ function create(){
 	game.add.sprite(12200,h-370,'games');
 	game.add.text(12280,h-430,"Developed Web & Android Games\n 500-1000 Downloads \n Rated 4.8/5.0 on Google Play",style_white);
 
-	game.add.sprite(12760,h-250,'gamershq');
-	game.add.text(12750,h-380,"Developed a gaming portal \n with frontend & backend \n to host and play games",style_white);
+	// game.add.sprite(12760,h-250,'gamershq');
+	// game.add.text(12750,h-380,"Developed a gaming portal \n with frontend & backend \n to host and play games",style_white);
 
 
-	game.add.sprite(13400,h-270,'harddrive').scale.setTo(0.6,0.6);
+	game.add.sprite(13250,h-240,'harddrive').scale.setTo(0.6,0.6);
 	// game.add.sprite(13400,h-310,'bits');
 	game.add.text(13300,h-430,"Developed meta-data tracking\nstructures for large storage devices \n using Boost C++ and \n Boost Python Libraries.",style_white);
 
@@ -470,7 +474,7 @@ function create(){
 	game.add.text(14240,h-370,"Worked in a team \nto develop Smart Hospital Management \n System for Kalpvriksh Hospital.",style_white);
 
 	game.add.sprite(14800,h-370,'restaurant');
-	var ambu = game.add.sprite(14900,h-260,'ambulance');
+	var ambu = game.add.sprite(14900,h-260,'waiter');
 	ambu.scale.setTo(0.8,0.8);
 	var t = game.add.tween(ambu).to( { x:14700,}, 2000, Phaser.Easing.Back.InOut, true, 0, 2000, true);
 	t.start();
@@ -565,12 +569,32 @@ function create(){
 	game.add.sprite(base6-700,h-450,'superhero');
 	game.add.text(base6-700,h-500,"Holds Yoga Session \nin DTU \n every Friday.",style_white);
 
-	game.add.sprite(base6-300,h-415,'volunteer');
+
+
+	game.add.sprite(base6-220,h-380,'hackeam');
 	game.add.text(base6-350,h-500,"Holds Yoga Session \nin DTU \n every Friday.",style_white);
+
 	
-	game.add.sprite(base6+50,h-415,'taanz');
-	game.add.text(base6-350,h-500,"Holds Yoga Session \nin DTU \n every Friday.",style_white);
+	game.add.sprite(base6+450,h-450,'tannz');
+	game.add.text(base6-700,h-500,"Holds Yoga Session \nin DTU \n every Friday.",style_white);
+
+
+
+	// game.add.sprite(base6-300,h-415,'volunteer');
+	// game.add.text(base6-350,h-500,"Holds Yoga Session \nin DTU \n every Friday.",style_white);
 	
+	// game.add.sprite(base6+50,h-415,'taanz');
+	// game.add.text(base6-350,h-500,"Holds Yoga Session \nin DTU \n every Friday.",style_white);
+	game.add.sprite(base6+120,h-450,'moksha');
+	game.add.text(base6-700,h-500,"Holds Yoga Session \nin DTU \n every Friday.",style_white);
+
+
+
+
+	// game.add.sprite(base6+120,h-376,'hackeam');
+	// game.add.text(base6-350,h-500,"Holds Yoga Session \nin DTU \n every Friday.",style_white);
+	
+
 	game.add.sprite(base6+1200-30,h-550,'tree1');
 	game.add.sprite(base6+1250+30,h-400,'treeS');
 	game.add.sprite(base6+1200,h-450,'yoga');
