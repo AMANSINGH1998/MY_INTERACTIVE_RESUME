@@ -55,6 +55,7 @@ function preload(){
 	text.anchor.setTo(0.5,0.5);
 
 	game.load.image('restaurant','assets/restaurant.png');
+	game.load.image('cb','assets/cblocks.png');
 	game.load.image('moksha','assets/moksha.png');
 	game.load.image('waiter','assets/waiter.png');
 	game.load.image('hackeam','assets/hackeam.png');
@@ -517,19 +518,19 @@ function create(){
 	
 	cup2=game.add.sprite(base5+1400,-340,'cup');
 	cup2.scale.setTo(0.8,0.8);
-	game.add.sprite(base5+1630,h-390,'csi');
-	game.add.text(base5+1580,h-250,"2nd in Spython \nGame Development\n Challenge",style_position);
+	game.add.sprite(base5+1630,h-420,'cb');
+	game.add.text(base5+1580,h-250,"2nd Data Science Challenge \n  Build Flipkart Scraper ",style_position);
 
 	
 
-	cup3=game.add.sprite(base5+1820,-410,'cup');
-	game.add.sprite(base5+2060,h-410,'codelhi');
-	game.add.text(base5+2080+50,h-310,"Hackathon",style_position);
+	cup3=game.add.sprite(base5+1870,-410,'cup');
+	game.add.sprite(base5+2120,h-450,'cb');
+	// game.add.text(base5+2080+50,h-250,"",style_position);
 
-	game.add.text(base5+2060,h-305+50,"1st in ",style_position);
-	game.add.sprite(base5+2170,h-310+50,'shephertz');
-	game.add.text(base5+2060,h-205+30,"1st in ",style_position);
-	game.add.sprite(base5+2150,h-210+30,'gaana').scale.setTo(0.15,0.15);
+	game.add.text(base5+2090,h-305+50,"1st in APAT test ",style_position);
+	// game.add.sprite(base5+2170,h-310+50,'shephertz');
+	// game.add.text(base5+2060,h-205+30,"1st in ",style_position);
+	// game.add.sprite(base5+2150,h-210+30,'gaana').scale.setTo(0.15,0.15);
 
 
 	//Add grari
@@ -671,7 +672,7 @@ function create(){
 	button_hackerearth = game.add.button(20000,h-600,'hackerearthLogo',openHackerearth, this);
 	*/
 	//Add hometown
-	var hometown = game.add.sprite(1600,h-440,'hometown');
+	var hometown = game.add.sprite(1650,h-420,'hometown');
 
 	//Add fullstack
 	game.add.sprite(5900,h-360,'developer');
